@@ -13,7 +13,7 @@ An autonomous multi-agent investigation system. Given an investigation topic, fo
 
 ## 🛠️ Tech Stack
 
-- **LLM**: Llama 3.3 70B, Llama 3.1 8B, Qwen 2.5 via **Groq API**
+- **LLM**: GPT-OSS 120B / 20B, Qwen 3.6 27B via **Groq API**
 - **Web Search**: DuckDuckGo (`ddgs`)
 - **Agent Framework**: LangChain
 - **Vector Search**: TF-IDF Similarity Store
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama-3.3-70b-versatile
+GROQ_MODEL=openai/gpt-oss-120b
 ```
 
 ### 3. Run Application

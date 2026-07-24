@@ -271,10 +271,11 @@ with st.sidebar:
     model_name = st.selectbox(
         "🤖 AI Model",
         [
+            "openai/gpt-oss-120b",
+            "openai/gpt-oss-20b",
+            "qwen/qwen3.6-27b",
             "llama-3.3-70b-versatile",
             "llama-3.1-8b-instant",
-            "qwen-2.5-32b",
-            "llama-3.2-3b-preview",
         ],
         index=0,
         help="Select model for agent execution",
@@ -456,7 +457,7 @@ if investigate_btn and topic:
         st.markdown("""
         **Troubleshooting:**
         1. Is your **Groq API Key** valid? (Get a free key at [console.groq.com](https://console.groq.com))
-        2. Did you hit Groq rate limits? Try selecting another model like `llama-3.1-8b-instant`.
+        2. Did you hit Groq rate limits? Try selecting another model like `openai/gpt-oss-20b`.
         3. Check your **Tavily API key** if using web search.
         """)
         st.session_state.is_investigating = False

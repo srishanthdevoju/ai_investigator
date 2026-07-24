@@ -22,7 +22,7 @@ def _get_config(key: str, default: str = "") -> str:
 
 # ─── LLM Configuration (Groq API) ──────────────────────────────────
 GROQ_API_KEY = _get_config("GROQ_API_KEY", "")
-GROQ_MODEL = _get_config("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = _get_config("GROQ_MODEL", "openai/gpt-oss-120b")
 GROQ_TEMPERATURE = 0.3
 
 # ─── Embedding Configuration ───────────────────────────────────────
