@@ -28,7 +28,7 @@ GROQ_TEMPERATURE = 0.3
 # ─── Embedding Configuration ───────────────────────────────────────
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
-# ─── FAISS Configuration ───────────────────────────────────────────
+# ─── TF-IDF Indexing Configuration ───────────────────────────────────
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 

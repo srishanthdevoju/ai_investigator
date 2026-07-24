@@ -6,7 +6,7 @@ An autonomous multi-agent investigation system. Given an investigation topic, fo
 
 | Agent | Role |
 |---|---|
-| 🔍 **Evidence Collector** | Live DuckDuckGo web search & vector indexing |
+| 🔍 **Evidence Collector** | Live DuckDuckGo web search & TF-IDF indexing |
 | 📅 **Timeline Builder** | Chronological event extraction & RAG context matching |
 | 🧠 **Reasoning Agent** | Cause-effect chain & root cause analysis |
 | 📝 **Report Generator** | Structured markdown report compilation |
@@ -16,7 +16,7 @@ An autonomous multi-agent investigation system. Given an investigation topic, fo
 - **LLM**: GPT-OSS 120B / 20B, Qwen 3.6 27B via **Groq API**
 - **Web Search**: DuckDuckGo (`ddgs`)
 - **Agent Framework**: LangChain
-- **Vector Search**: TF-IDF Similarity Store
+- **Vector Search**: TF-IDF Similarity Index
 - **Frontend**: Streamlit
 
 ## 🚀 Quick Start
@@ -48,7 +48,7 @@ ai_investigator/
 ├── requirements.txt           # Python dependencies
 ├── .env.example               # Environment variable template
 └── agents/
-    ├── evidence_collector.py  # Live web search & vector store agent
+    ├── evidence_collector.py  # Live web search & TF-IDF retriever agent
     ├── timeline_builder.py    # Timeline extraction agent
     ├── reasoning_agent.py     # Cause-effect analysis agent
     └── report_generator.py    # Report assembly agent

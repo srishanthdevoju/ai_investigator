@@ -286,7 +286,7 @@ with st.sidebar:
     # Agent Pipeline Info
     st.markdown("### 🔗 Agent Pipeline")
     agents_info = [
-        ("🔍", "Evidence Collector", "Web search & FAISS storage"),
+        ("🔍", "Evidence Collector", "Web search & TF-IDF storage"),
         ("📅", "Timeline Builder", "Chronological event extraction"),
         ("🧠", "Reasoning Agent", "Cause-effect chain analysis"),
         ("📝", "Report Generator", "Structured report assembly"),
@@ -365,7 +365,7 @@ if investigate_btn and topic:
     with met_col1:
         st.metric("🤖 Model", model_name)
     with met_col2:
-        st.metric("📚 Vector DB", "FAISS")
+        st.metric("📚 Retrieval Engine", "TF-IDF Index")
 
     st.markdown("")
 
@@ -458,7 +458,7 @@ if investigate_btn and topic:
         **Troubleshooting:**
         1. Is your **Groq API Key** valid? (Get a free key at [console.groq.com](https://console.groq.com))
         2. Did you hit Groq rate limits? Try selecting another model like `openai/gpt-oss-20b`.
-        3. Check your **Tavily API key** if using web search.
+        3. Ensure your internet connection is active for DuckDuckGo web search.
         """)
         st.session_state.is_investigating = False
 
