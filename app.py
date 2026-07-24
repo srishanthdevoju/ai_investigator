@@ -270,7 +270,13 @@ with st.sidebar:
     # Model selector
     model_name = st.selectbox(
         "🤖 AI Model",
-        ["llama-3.3-70b-versatile", "llama3-70b-8192", "llama3-8b-8192", "mixtral-8x7b-32768", "gemma2-9b-it"],
+        [
+            "llama-3.3-70b-versatile",
+            "llama-3.1-8b-instant",
+            "gemma2-9b-it",
+            "deepseek-r1-distill-llama-70b",
+            "llama-3.2-3b-preview",
+        ],
         index=0,
         help="Select model for agent execution",
     )
@@ -451,7 +457,7 @@ if investigate_btn and topic:
         st.markdown("""
         **Troubleshooting:**
         1. Is your **Groq API Key** valid? (Get a free key at [console.groq.com](https://console.groq.com))
-        2. Did you hit Groq rate limits? Try selecting another model like `llama3-8b-8192`.
+        2. Did you hit Groq rate limits? Try selecting another model like `llama-3.1-8b-instant`.
         3. Check your **Tavily API key** if using web search.
         """)
         st.session_state.is_investigating = False
