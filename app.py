@@ -273,8 +273,7 @@ with st.sidebar:
         [
             "llama-3.3-70b-versatile",
             "llama-3.1-8b-instant",
-            "gemma2-9b-it",
-            "deepseek-r1-distill-llama-70b",
+            "qwen-2.5-32b",
             "llama-3.2-3b-preview",
         ],
         index=0,

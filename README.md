@@ -13,7 +13,7 @@ An autonomous multi-agent investigation system. Given an investigation topic, fo
 
 ## 🛠️ Tech Stack
 
-- **LLM**: Llama 3.3 70B, Llama 3.1 8B, DeepSeek R1, Gemma 2 via **Groq API**
+- **LLM**: Llama 3.3 70B, Llama 3.1 8B, Qwen 2.5 via **Groq API**
 - **Web Search**: DuckDuckGo (`ddgs`)
 - **Agent Framework**: LangChain
 - **Vector Search**: TF-IDF Similarity Store
