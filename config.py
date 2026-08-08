@@ -42,6 +42,12 @@ Topic: {topic}
 Search Results:
 {search_results}
 
+IMPORTANT ACCURACY RULES:
+- ONLY extract facts that are explicitly stated in the search results above.
+- Do NOT infer, assume, or fabricate any information not present in the sources.
+- If dates or details are uncertain, say so (e.g., "reportedly", "approximately").
+- Attribute each fact to its specific source.
+
 Extract exactly 5-8 bullet points of critical evidence. Each bullet should be a concise,
 factual statement with the source noted. Format as:
 • [Evidence statement] (Source: [source name])
@@ -56,7 +62,14 @@ Topic: {topic}
 Evidence & Context:
 {context}
 
-Build a timeline of 5-8 key events. Format EXACTLY as:
+CRITICAL ACCURACY RULES — you MUST follow these:
+1. ONLY include events that are explicitly mentioned in the evidence and context above.
+2. Do NOT fabricate, guess, or invent any dates, events, or details not found in the provided text.
+3. If a date is not explicitly stated, use qualifiers like "reportedly" or "around" — but still only if the event itself is mentioned in the evidence.
+4. Do NOT add events from your general knowledge that are not supported by the evidence above.
+5. If the evidence only supports fewer than 5 events, list only what is supported — do NOT pad with invented events.
+
+Build a timeline of key events (up to 8, but only as many as the evidence supports). Format EXACTLY as:
 [DATE] → [Event description]
 
 Use specific dates where possible (e.g., "Mar 8, 2023"), or approximate periods
@@ -108,6 +121,12 @@ Timeline of Events:
 Analysis & Reasoning:
 {analysis}
 
+CRITICAL ACCURACY RULES:
+- ONLY include facts, dates, and events that appear in the evidence, timeline, and analysis provided above.
+- Do NOT add any information from your own knowledge that is not present in the inputs.
+- If something is uncertain or approximate, clearly mark it as such.
+- Reproduce timeline events faithfully — do not alter dates or add new events.
+
 Generate a professional investigation report with these EXACT sections:
 
 # 🔍 INVESTIGATION REPORT
@@ -116,10 +135,10 @@ Generate a professional investigation report with these EXACT sections:
 [2-3 sentence overview of what was investigated and the key finding]
 
 ## 🔎 Evidence
-[List all evidence as bullet points]
+[List all evidence as bullet points — reproduce faithfully from the evidence above]
 
 ## 📅 Timeline of Events
-[List all timeline events]
+[List all timeline events — reproduce faithfully from the timeline above, do NOT add or modify events]
 
 ## 🧠 Analysis
 [The cause-effect analysis and reasoning]
